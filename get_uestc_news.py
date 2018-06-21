@@ -10,7 +10,7 @@ def get_clicks(news_href):  # 获取点击量的子函数
     return click
 
 
-outfile = './clicks.csv'
+outfile = './news_clicks.csv'
 open(outfile, 'w').close()  # 将输出文件清空
 url = 'http://www.uestc.edu.cn/'
 res = requests.get(url)  # 使用requests获取网页
